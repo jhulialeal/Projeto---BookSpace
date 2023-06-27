@@ -17,6 +17,7 @@ body {
 
 .content {
     text-align: center;
+    color: #603870;
 }
 
 form {
@@ -39,19 +40,19 @@ form input {
 
 form a {
     margin-top: 10px;
-    background-color: hsl(345, 40%, 98%); /*Cor de fundo do botão*/
-    border: none; /*Remove a borda padrão*/
-    color: rgb(10, 10, 10); /* Cor do texto do botão*/
+    background-color: hsl(0, 0%, 100%); /*Cor de fundo do botão*/
+    border: 2px double #43294c;
+    color: #43294c; /* Cor do texto do botão*/
     padding: 10px 20px; /* Espaçamento interno do botão*/
     text-align: center; /* Alinhamento do texto do botão*/
     text-decoration: none; /*Remove o sublinhado do texto do botão*/
     display: inline-block; /*Exibe um botão como um elemento inline-block*/
     font-size: 18px; /*Tamanho da fonte do botão*/
-    margin: 4px 1px; /*Margem externa do botão*/
+    margin: 10px 1px; /*Margem externa do botão*/
     cursor: pointer; /*Muda o cursor para um ponteiro quando o mouse estiver sobre o botão*/
     border-radius: 4px; /*Arredonda os cantos do botão*/
-    font-weight: black;
-    font-family: 'Inconsolata', sans-serif;
+    font-weight: bold;
+    font-family: 'Inconsolata';
 }
 
 table {
@@ -77,9 +78,16 @@ table thead th {
 
 h1 {
     margin-bottom: 20px;
+    font-size: 80px;
+    color: #603870;
 }
 
 /* Estilização do botão "Adicionar livro" quando o mouse estiver sobre ele */
-#book-form button:hover{
+#book-form button:disabled {
     background-color: white; /*Muda a cor de fundo do botão*/
+
+
+}
+.form-estilo {
+    border: 2px double #43294c;
 }
