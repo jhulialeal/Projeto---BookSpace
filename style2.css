@@ -6,7 +6,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    pa
+    padding: 20px;
 }
 
 .container {
@@ -14,6 +14,11 @@ body {
     flex-direction: column;
     align-items: center;
     width: 100%;
+    max-width: 1000px;
+    margin-right: auto;
+    margin-left: auto;
+    justify-content: center;
+    min-height: 100vh;
 }
 
 .titulo {
@@ -29,7 +34,27 @@ body {
     color: hsl(231, 35%, 78%);
     width: 100%;
 }
-
+.table {
+    width: 100%;
+    border: 1px solid black;
+}
+.table-header {
+    display: flex;
+    width: 100%;
+    background: #000;
+}
+.table-row {
+    display: flex;
+    width: 100%;
+    padding: 12px 0;
+}
+.table-row:nth-of-type() {
+    background #EEEEEE;
+}
+.table-data .header_item {
+    flex: 1 1 20%;
+    text-align: center;
+}
 .table-element {
     font-size: 20px;
     margin-bottom: 80px;
@@ -52,3 +77,16 @@ body {
 #book-list td:nth-child(3) {
     width: 150px;
 }
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&family=Open+Sans:wght@300&display=swap');
+.filter_link {
+    color: white;
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+/* .filter_link::after {
+    content:'';
+    position: absolute
+} */
