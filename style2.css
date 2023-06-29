@@ -86,7 +86,18 @@ body {
     padding-left: 24px;
     padding-right: 24px;
 }
-/* .filter_link::after {
+.filter_link::after {
     content:'';
-    position: absolute
-} */
+    position: absolute;
+    right: 18px;
+    color: white;
+    font-size: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.filter_link.desc::after {
+    content: ('desc');
+}
+.filter_link.asc::after {
+    content: ('asc');
+}
