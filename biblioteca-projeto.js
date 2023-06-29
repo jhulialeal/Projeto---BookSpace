@@ -115,4 +115,25 @@ const biblioteca = new Biblioteca();
         tbody.appendChild(tr);
       });
     }
+
+<script>
+  google.books.load();
+
+  function initialize() 
+  {
+    const viewer = new google.books.DefaultViewer(document.getElementById('viewer'));
+    viewer.load('isbn', onBookLoad);
+  }
+
+  function onBookLoad() {
+    const book = viewer.getBook();
+    const imageUrl = book.getThumbnailUrl();
+
+    const bookImage = document.getElementById('book-image');
+    bookImage.src = imageUrl;
+  }
+
+  google.books.setOnLoadCallback(initialize);
+</script>
+
  

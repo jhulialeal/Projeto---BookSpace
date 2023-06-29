@@ -1,0 +1,132 @@
+body {
+    font-family: 'Inconsolata', sans-serif;
+    line-height: 1.6;
+    background-color: black;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    text-align: center;
+    width: 20%;
+}
+
+.content {
+    text-align: center;
+    color: hsl(231, 35%, 78%);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+}
+
+form label {
+    margin-top: 80px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+
+form input {
+    margin-top: 5px;
+    padding: 5px;
+    border-radius: 30px;
+}
+
+table {
+    width: 100%;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+table th,
+table td {
+    padding: 5px;
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+table thead th {
+    background-color: #fafafa;
+    text-transform: uppercase;
+}
+
+
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 80px;
+    color: hsl(231, 35%, 78%);
+}
+
+/* Estilização do botão "Adicionar livro" quando o mouse estiver sobre ele */
+#book-form button:hover {
+    background-color: white; /*Muda a cor de fundo do botão*/
+    
+    
+}
+.form-estilo {
+    border: 2px double #271e48;
+}
+
+a {
+    position: absolute;
+    top: 90%; 
+    left: 50%;
+    transform: translate(-50%, -50%); /*Realiza um deslocamento de 50% para esquerda e para cima*/
+    width: 200px; /*Define a largura do elemento*/
+    height: 60px; /*Define a altura do elemento */
+    text-align: center; 
+    line-height: 60px; /*Define a altura da linha igual a altura do elemento, centralizando verticalmente o texto */
+    color: #ffff; /*Cor do texto*/
+    font-size: 24px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: 'Inconsolata';
+    box-sizing: border-box;
+    background: linear-gradient(90deg,  hsl(231, 35%, 78%), #9198c9, #3b395b);
+    background-size: 400%;
+    border-radius: 30px; /*Arredonda as bordas*/
+    z-index: 1;
+  }
+  a:hover {
+    animation: animate 8s linear infinite;
+  }
+  @keyframes animate {
+    0% {
+      background-position: 0%; /*Posição inicial do gradiente*/
+    }
+    100% {
+      background-position: 400%; /*Posição final do gradiente*/
+    }
+  }
+  a:before {
+    content: ""; /*Define a posição do pseudoelemento como vazio*/
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    z-index: -1;
+    background: linear-gradient(45deg, #E2E4F6, #B47978, #02111B); /*Gradiente linear de cores para fundo do pseudoelemento */
+    background-size: 400%;
+    border-radius: 40px;
+    opacity: 0;
+    transition: 0.5%;
+  }
+  a:hover:before { 
+    filter: blur(20px); /*Desfoque*/
+    opacity: 1;
+    animation: animate 8s linear infinite;
+  }
+
+.alinhar-body {
+    align-items: baseline
+}
