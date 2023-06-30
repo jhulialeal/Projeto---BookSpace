@@ -20,10 +20,33 @@ body {
   background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
   overflow: hidden;
 }
-
-.estrelas {
+#estrelas::before,
+#estrelas::after {
   position: absolute;
+  top: 0;
+  width: 1px;
+  height: 1px;
+  background: transparent;
+  box-shadow: 2000px 2000px #FFF;
 }
+#estrelas::before {
+  left: 20%;
+  animation: animStar 50s linear infinite;
+}
+
+#estrelas:after {
+  left: 40%;
+  animation: animStar 100s linear infinite;
+}
+@keyframes animStar {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-2000px);
+  }
+}
+
 .container {
     text-align: center;
     width: 20%;
@@ -71,8 +94,6 @@ table thead th {
     background-color: #fafafa;
     text-transform: uppercase;
 }
-
-
 
 h1 {
     margin-bottom: 20px;
