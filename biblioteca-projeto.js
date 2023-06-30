@@ -116,7 +116,7 @@ const biblioteca = new Biblioteca();
       });
     }
 
-<script>
+{/* <script>
   google.books.load();
 
   function initialize() 
@@ -134,6 +134,6 @@ const biblioteca = new Biblioteca();
   }
 
   google.books.setOnLoadCallback(initialize);
-</script>
+</script> */}
 
  

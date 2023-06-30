@@ -32,23 +32,23 @@ body {
     font-family: 'Inconsolata', sans-serif;
     text-align: center;
     color: hsl(231, 35%, 78%);
-    width: 100%;
+    width: 100%; /*Definir a largura do elemento para ocupar a largura do contêiner*/
 }
 .table {
     width: 100%;
-    border: 1px solid black;
+    border: 1px solid black; /*Adiciona uma borda sólida de 1px ao redor da tabela com a cor*/
 }
 .table-header {
     display: flex;
     width: 100%;
-    background: #000;
+    background: #000; /*Cor de fundo do cabeçalho da tabela*/
 }
 .table-row {
     display: flex;
     width: 100%;
     padding: 12px 0;
 }
-.table-row:nth-of-type() {
+.table-row:nth-of-type(odd) { /*Aplica estilos a cada linha ímpar da tabela */
     background #EEEEEE;
 }
 .table-data .header_item {
@@ -63,7 +63,7 @@ body {
     text-align: center;
 }
 .table-element th {
-    width: 150px;
+    width: 200px;
 }
 
 #book-list {
