@@ -16,7 +16,7 @@ const biblioteca = [];
 console.log(`
 ==========================================
   Bem vindo ao gerenciador de livros
-  Aluna: Jhulia ? (?)
+  Aluna: Jhulia de Souza Leal
 ==========================================
 `);
 
