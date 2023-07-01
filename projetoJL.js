@@ -101,6 +101,23 @@ Data de publicação: ${livro.data}\n`);
 
       break;
 
+    case "3":
+      const tituloRemover = readlineSync.question(
+        "Digite o título do livro que deseja remover: "
+      );
+
+      const indice = biblioteca.findIndex((livro) => {
+        return livro.titulo.includes(tituloRemover);
+      });
+
+      if (indice === -1) {
+        console.log("Livro não encontrado");
+      }
+
+      biblioteca.splice(indice, 1);
+
+      break;
+
     case "4":
       continua = false;
       break;
